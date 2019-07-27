@@ -2,7 +2,7 @@ node('master')
 {
     stage('continuous download')
 {  
-    git 'https://github.com/selenium-saikrishna/maven'
+    git 'https://github.com/ravikumar001/jenkin'
 }
     stage('continuous build')
 {    
@@ -14,7 +14,7 @@ node('master')
 }
      stage('continuous testing')
 {
-    git 'https://github.com/selenium-saikrishna/FunctionalTesting'
+    git 'https://github.com/ravikumar001/jenkin'
     sh label: '', script: 'echo "test success"'
 }     
      stage('continuous delivery')
